@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C-7</title>
+    <style>
+        html {
+            scroll-padding-top: 160px;
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: #333333;
+            line-height: 1.6;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid #eee;
+            z-index: 1000;
+            height: 160px;
+        }
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.03em;
+        }
+        .nav {
+            display: flex;
+            gap: 3rem;
+            font-size: 0.875rem;
+            letter-spacing: 0.05em;
+        }
+        .nav a {
+            color: #333333;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .nav a:hover {
+            color: #1E90FF;
+        }
+        main {
+            margin-top: 160px;
+        }
+        .banner {
+            width: 100%;
+            height: 400px;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+        }
+        .section {
+            padding: 0;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        .section-content {
+            padding: 4rem 2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-divider {
+            height: 1px;
+            background: #EEEEEE;
+            margin: 0;
+            width: 100%;
+        }
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0 0 1.5rem 0;
+        }
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 0 0 0.75rem 0;
+        }
+        .grid {
+            display: grid;
+            gap: 2rem;
+        }
+        @media (min-width: 768px) {
+            .grid-cols-2 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .space-y-3 > * + * {
+            margin-top: 0.75rem;
+        }
+        .space-y-8 > * + * {
+            margin-top: 2rem;
+        }
+        .space-y-12 > * + * {
+            margin-top: 3rem;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .bullet-list {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin: 2rem 0 0 0;
+        }
+        .bullet-list li {
+            margin-bottom: 1rem;
+        }
+        .bullet-list li:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">C-7</div>
+            <nav class="nav">
+                <a href="#about">ABOUT</a>
+                <a href="#services">SERVICES</a>
+                <a href="#research">RESEARCH</a>
+                <a href="#jobs">JOBS</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="banner">
+            <img src="https://github.com/C-7-ORG/1C/blob/main/Image.jpg?raw=true" alt="C-7 Banner" />
+        </div>
+        
+        <section id="about" class="section">
+            <div class="section-content">
+                <div class="container">
+                    <h2>About</h2>
+                    <p style="margin-bottom: 2rem;">
+                        C-7 is a strategic consulting firm and research group specializing in biosecurity and emerging biotech ventures with an extensive network of key opinion leaders throughout EU, US, Southeast Asia, Latin America, and the Middle East. C-7 provides access to emerging market opportunities, strategic advisory services, and capital formation solutions for cutting-edge research and development projects.
+                    </p>
+                    <ul class="bullet-list">
+                        <li> Market Intelligence: We maintain comprehensive technical and market coverage across the biotech landscape, providing our partners with asymmetric information advantages and bespoke advisory services throughout a venture's lifecycle.</li>
+                        <li> Strategic Partnerships: We cultivate relationships with key decision-makers across institutional investors, research laboratories, manufacturing facilities, and regulatory bodies.</li>
+                    </ul>
+                    <p style="margin-bottom: 2rem;">
+                        Our network spans leading research institutions, alternative asset managers, regulatory bodies, defense sectors, and critical technology domains. We bring decades of experience navigating the intersection of emerging technologies, risk management, and commercial opportunities.
+                    </p>
+                </div>
+            </div>
+            <div class="section-divider"></div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="section-content">
+                <div class="container">
+                    <h2>Services</h2>
+                    <div class="grid grid-cols-2 gap-8">
+                        <div class="space-y-3">
+                            <p>• Custom Research</p>
+                            <p>• Market Intelligence</p>
+                            <p>• Capital Raising</p>
+                            <p>• Investor Relations</p>
+                            <p>• Distribution & Market Entry</p>
+                        </div>
+                        <div class="space-y-3">
+                            <p>• Strategic Partnerships</p>
+                            <p>• Due Diligence</p>
+                            <p>• Executive Search</p>
+                            <p>• Technical Assessments</p>
+                            <p>• Risk, Security & Compliance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-divider"></div>
+        </section>
+
+        <section class="section">
+            <div class="section-content">
+                <div class="container">
+                    <h2>Values</h2>
+                    <div class="grid grid-cols-2 gap-8">
+                        <div class="space-y-8">
+                            <div>
+                                <h3>Integrity</h3>
+                                <p>Trust through warm introductions and long standing reputation.</p>
+                            </div>
+                            <div>
+                                <h3>Fidelity</h3>
+                                <p>We provide verified information and cutting-edge insights.</p>
+                            </div>
+                        </div>
+                        <div class="space-y-8">
+                            <div>
+                                <h3>Discretion</h3>
+                                <p>Strict confidentiality—we don't reveal sources or methods.</p>
+                            </div>
+                            <div>
+                                <h3>Adaptability</h3>
+                                <p>Small, lean, high-impact teams driven by cross-discipline expertise.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-divider"></div>
+        </section>
+
+        <section id="research" class="section">
+            <div class="section-content">
+                <div class="container">
+                    <h2>Research Projects</h2>
+                    <div class="space-y-12">
+                        <div>
+                            <h3>Biotech Investor Salon</h3>
+                            <p>An exclusive gathering of investors, asset managers, and experts passionate about accelerating the fields of biotech, neurotech, and longevity.</p>
+                        </div>
+                        <div>
+                            <h3>Neurotechnology Research & Analysis Group</h3>
+                            <p>Specializes in mapping global neurotechnology developments, from whole-brain emulation and brain-computer interfaces to brain preservation and computational neuroscience development.</p>
+                        </div>
+                        <div>
+                            <h3>Synthetic Biology Research Group</h3>
+                            <p>Houses teams studying engineered biological systems, from customized microorganisms to synthetic proteins.</p>
+                        </div>
+                        <div>
+                            <h3>Laboratory & Clinical Infrastructure Intelligence Section</h3>
+                            <p>Maps global research infrastructure, tracking the development of specialized research facilities, including BSL-3/4 labs, gene synthesis facilities, and clinical trial networks across the globe.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-divider"></div>
+        </section>
+
+        <section id="jobs" class="section">
+            <div class="section-content">
+                <div class="container">
+                    <h2>Jobs</h2>
+                    <p>We are currently hiring full-time and part-time investment associates.</p>
+                </div>
+            </div>
+            <div class="section-divider"></div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section-content">
+                <div class="container">
+                    <h2>Contact</h2>
+                    <a href="mailto:Contact@C-7.org" style="font-size: 1.25rem;">Contact@C-7.org</a>
+                </div>
+            </div>
+            <div class="section-divider"></div>
+        </section>
+
+        <footer class="section">
+            <div class="section-content" style="padding: 2rem;">
+                <div class="container">
+                    <p class="text-center" style="color: #666; font-size: 0.875rem; margin: 0;">
+                        DISCLAIMER: This page is for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy any securities or financial instruments.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
